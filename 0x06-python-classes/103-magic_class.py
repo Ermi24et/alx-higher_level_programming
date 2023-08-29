@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ defines a magic class """
-import math
+from math import pi
 
 
 class MagicClass:
@@ -14,8 +14,8 @@ class MagicClass:
 
         def area(self):
             """ calculates area """
-            return (self.__radius ** 2) * math.pi
+            return (self.__radius ** 2) * pi
 
         def circumference(self):
             """ circumference of a circle """
-            return 2 * math.pi * self.__radius
+            return 2 * pi * self.__radius
