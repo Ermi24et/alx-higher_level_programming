@@ -4,5 +4,5 @@ an empty class Rectangle
 """
 
 
-class Rectangle():
+class Rectangle:
     pass
