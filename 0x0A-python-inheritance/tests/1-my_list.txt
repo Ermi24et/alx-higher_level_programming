@@ -1,51 +1,37 @@
->>> MyList = __import__("1-my_list").MyList
->>> tl = MyList()
->>> tl.print_sorted()
-[]
+Testing "1-my_list" module
+============================
+using "print_sorted()" method
+-----------------------------
 
->>> tl = MyList()
->>> tl.append(2)
->>> tl.append(4)
->>> tl.append(1)
->>> tl.append(5)
->>> tl.append(3)
->>> print(tl)
-[2, 4, 1, 5, 3]
+Import the function grom the module:
+>>> MyList = __import__'1-my_list').MyList
+
+Normal output
+-------------
+>>> my_list = MyList()
+>>> my_list.append(1)
+>>> my_list.append(4)
+>>> my_list.append(2)
+>>> my_list.append(3)
+>>> my_list.append(5)
+>>> print(my_list)
+[1, 4, 2, 3, 5]
 >>> tl.print_sorted()
 [1, 2, 3, 4, 5]
 >>> print(tl)
-[2, 4, 1, 5, 3]
+[1, 4, 2, 3, 5]
 
->>> tl = MyList()
->>> tl.append(9)
->>> tl.append(8)
->>> tl.append(7)
->>> tl.append(6)
->>> tl.append(5)
+Negative and positive numbers
+-----------------------------
+>>> my_list = MyList()
+>>> my_list.append(-1)
+>>> my_list.append(4)
+>>> my_list.append(-2)
+>>> my_list.append(3)
+>>> my_list.append(-5)
+>>> print(my_list)
+[-1, 4, -2, 3, -5]
+>>> my_list.print_sorted()
+[-5, -2, -1, 3, 4]
 >>> print(tl)
-[9, 8, 7, 6, 5]
->>> tl.print_sorted()
-[5, 6, 7, 8, 9]
->>> print(tl)
-[9, 8, 7, 6, 5]
-
->>> tl = MyList()
->>> tl.append(-34)
->>> tl.append(-23)
->>> tl.append(-39)
->>> tl.append(-2)
-print(tl)
-[-34, -23, -39, -2]
-tl.print_sorted()
-[-39, -34, -23, -2]
-print(tl)
-[-34, -23, -39, -2]
-
->>> tl = Mylist()
->>> tl.append(5)
->>> tl.append(5)
-print(tl)
-[5, 5]
->>> tl.print_sorted()
-[5, 5]
-print(tl)
+[-1, 4, -2, 3, -5]
