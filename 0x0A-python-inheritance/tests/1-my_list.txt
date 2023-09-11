@@ -3,6 +3,7 @@
 >>> tl.print_sorted()
 []
 
+>>> tl = MyList()
 >>> tl.append(2)
 >>> tl.append(4)
 >>> tl.append(1)
