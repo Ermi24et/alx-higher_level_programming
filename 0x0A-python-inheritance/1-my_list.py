@@ -1,12 +1,11 @@
 #!/usr/bin/python3
 """
-a module that contains the class MyList
+holds a class MyList
 """
 
 
 class MyList(list):
-    """ subclass of a lsit """
-
+    """ a class that inherites from list """
     def print_sorted(self):
-        """ prints a sorted list """
+        """ prints an ordered list """
         print(sorted(self))
