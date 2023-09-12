@@ -1,0 +1,52 @@
+***********************
+7=base_geometry.py
+***********************
+
+import module:
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+>>> gm = BaseGeometry()
+
+checking for validity:
+>>> gm.integer_validator("my_int", 9)
+
+checking for invalid string:
+>>> gm.integer_validator("distance", "10")
+Traceback (most recent call last):
+...
+TypeError: distance must be an integer
+
+checking for invalid negative integer:
+>>> gm.integer_validator("distance", -5)
+Traceback (most recent call last):
+...
+ValueError: distance must be greater than 0
+
+checking for zero value:
+>>> gm.integer_validator("distance", 0)
+Traceback (most recent call last):
+...
+ValueError: distance must be greater than 0
+
+checking for tuples:
+>>> gm.integer_validator("hehe", (2, 4))
+Traceback (most recent call last):
+...
+TypeError: hehe must be an integer
+
+checking for dictionary list:
+>>> gm.integer_validator("hehe", {4, 6})
+Traceback (most recent call last):
+...
+TypeError: hehe must be an integer
+
+checking for 0 argument:
+>>> gm.integer_validator()
+Traceback (most recent call last):
+...
+TypeError: integer_validator() missing two required positional arguments: 'name' and 'value'
+
+checking for float numbers:
+>>> gm.integer_validator("hehe", 3.6)
+Traceback (most recent call last):
+...
+TypeError: hehe must be an integer
