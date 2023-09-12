@@ -43,7 +43,7 @@ checking for 0 argument:
 >>> gm.integer_validator()
 Traceback (most recent call last):
 ...
-TypeError: integer_validator() missing two required positional arguments: 'name' and 'value'
+TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
 
 checking for float numbers:
 >>> gm.integer_validator("hehe", 3.6)
