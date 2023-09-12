@@ -4,7 +4,6 @@
 
 def pascal_triangle(n):
     """ returns a list of list of integers """
-    
     if n <= 0:
         return []
 
