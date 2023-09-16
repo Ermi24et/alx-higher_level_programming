@@ -2,6 +2,7 @@
 """ rectangle.py """
 from .base import Base
 
+
 class Rectangle(Base):
     """ a class rectangle that inherites from base """
     def __init__(self, width, height, x=0, y=0, id=None):
@@ -89,4 +90,10 @@ class Rectangle(Base):
     def display(self):
         """ prints in stdout the Rectangle instance with # """
         for i in range(self.__height):
-                print("#" * self.__width)
+            print("#" * self.__width)
+
+    def __str__(self):
+        """ it returns the rectangle's id, x, y, height, width """
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x,
+                                                       self.y, self.width,
+                                                       self.height)
