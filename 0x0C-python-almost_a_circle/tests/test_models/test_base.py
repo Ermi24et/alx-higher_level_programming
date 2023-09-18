@@ -64,6 +64,7 @@ class TestBase(unittest.TestCase):
         with self.assertRaises(AttributeError):
             base.Base(5).__nb_objects
 
+
 class TestBase_to_json_string(unittest.TestCase):
     """ test for the to_json_string method """
     def test_to_json_string_emp(self):
@@ -86,6 +87,7 @@ class TestBase_to_json_string(unittest.TestCase):
         with self.assertRaises(TypeError):
             base.Base.to_json_string([], 5)
 
+
 class TestBase_from_json_string(unittest.TestCase):
     """ test for the from_json_string """
     def test_from_json_string_none(self):
@@ -101,6 +103,7 @@ class TestBase_from_json_string(unittest.TestCase):
         """ test from_json_string with no args """
         with self.assertRaises(TypeError):
             base.Base.from_json_string()
+
 
 if __name__ == "__main__":
     unittest.main()

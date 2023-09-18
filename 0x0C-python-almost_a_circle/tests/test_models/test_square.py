@@ -171,5 +171,6 @@ class TestSquare(unittest.TestCase):
         res = {'id': 1, 'x': 3, 'size': 20, 'y': 1}
         self.assertDictEqual(res, s1.to_dictionary())
 
+
 if __name__ == "__main__":
     unittest.main()

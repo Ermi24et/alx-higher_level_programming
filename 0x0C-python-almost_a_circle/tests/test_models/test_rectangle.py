@@ -1,11 +1,10 @@
 #!/usr/bin/python3
 """
-module for the rectangle class 
+module for the rectangle class
 """
 import unittest
 import models.base as base
 import models.rectangle as rec
-
 
 
 class TestRectnagle(unittest.TestCase):
@@ -241,6 +240,7 @@ class TestRectnagle(unittest.TestCase):
         r2 = rec.Rectangle(5, 3, 7, 4, 1)
         r2.update(**r1.to_dictionary())
         self.assertNotEqual(r1, r2)
+
 
 if __name__ == "__main__":
     unittest.main()
