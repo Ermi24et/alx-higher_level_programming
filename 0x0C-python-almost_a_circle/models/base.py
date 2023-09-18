@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-""" base.py """
+"""
+base module
+"""
 import json
 
 
@@ -10,6 +12,7 @@ class Base:
     __nb_objects = 0
 
     def __init__(self, id=None):
+        """ instantiation """
         if (id is not None):
             self.id = id
         else:
