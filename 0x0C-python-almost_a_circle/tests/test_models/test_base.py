@@ -83,7 +83,7 @@ class TestBase_to_json_string(unittest.TestCase):
         self.assertEqual(base.Base.to_json_string(None), "[]")
 
     def test_to_json_string_no_args(self):
-        """ test to to_json_string with more than one args """
+        """ test to to_json_string with more than 1 args """
         with self.assertRaises(TypeError):
             base.Base.to_json_string([], 5)
 
