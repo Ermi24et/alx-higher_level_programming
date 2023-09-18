@@ -109,7 +109,7 @@ class TestSquare(unittest.TestCase):
             sq.Square(2, 3.7)
 
     def test_x_list(self):
-        """ test x with list """
+        """ test x method with list """
         with self.assertRaisesRegex(TypeError, "x must be an integer"):
             sq.Square(2, [2, 3, 4])
 

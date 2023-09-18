@@ -228,7 +228,7 @@ class TestRectnagle(unittest.TestCase):
             r1.update(78, "hello")
 
     def test_update_kwargs(self):
-        """ testing update kwargs """
+        """ testing update method kwargs """
         r1 = rec.Rectangle(2, 3, 4, 5, 6)
         r1.update(id=78, x=2, height=3)
         r1.update(y=5, height=23, width=3)
