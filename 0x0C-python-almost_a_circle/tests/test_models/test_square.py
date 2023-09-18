@@ -114,7 +114,7 @@ class TestSquare(unittest.TestCase):
             sq.Square(2, [2, 3, 4])
 
     def test_y_none(self):
-        """ test y with none """
+        """ test y with none the method"""
         with self.assertRaisesRegex(TypeError, "y must be an integer"):
             sq.Square(2, 3, None)
 

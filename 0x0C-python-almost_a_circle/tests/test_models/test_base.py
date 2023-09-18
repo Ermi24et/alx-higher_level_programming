@@ -89,7 +89,7 @@ class TestBase_to_json_string(unittest.TestCase):
 
 
 class TestBase_from_json_string(unittest.TestCase):
-    """ test for the from_json_string """
+    """ test for the from_json_string to the method"""
     def test_from_json_string_none(self):
         """ test from_json_string with none """
         self.assertEqual(base.Base.from_json_string(None), [])
@@ -100,7 +100,7 @@ class TestBase_from_json_string(unittest.TestCase):
             base.Base.from_json_string([], 5)
 
     def test_from_json_string_no_args(self):
-        """ test from_json_string with no args """
+        """ test from_json_string with no args to method"""
         with self.assertRaises(TypeError):
             base.Base.from_json_string()
 

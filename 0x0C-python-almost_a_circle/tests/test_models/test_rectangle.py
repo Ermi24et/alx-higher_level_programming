@@ -235,7 +235,7 @@ class TestRectnagle(unittest.TestCase):
         self.assertEqual("[Rectangle] (78) 2/5 - 3/23", str(r1))
 
     def test_to_dictionary(self):
-        """ tetsing dictionary """
+        """ tetsing dictionary method"""
         r1 = rec.Rectangle(2, 3, 4, 5, 6)
         r2 = rec.Rectangle(5, 3, 7, 4, 1)
         r2.update(**r1.to_dictionary())
