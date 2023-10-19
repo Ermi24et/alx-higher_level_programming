@@ -2,5 +2,5 @@
 
 CRATE TABLE IF NOT EXISTS id_not_null(
 	id INT DEFAULT 1,
-	nmae VARCHAR(256)
+	name VARCHAR(256)
 );
