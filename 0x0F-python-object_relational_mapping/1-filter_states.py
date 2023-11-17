@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 a script that lists all states with a name starting with
-N (upper N) from the database
+N (upper N) from the database htbn..
 """
 if __name__ == "__main__":
     import sys
