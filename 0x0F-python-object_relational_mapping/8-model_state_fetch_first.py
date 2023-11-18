@@ -13,10 +13,9 @@ if __name__ == "__main__":
             3306/{sys.argv[3]}")
     Session = sessionmaker(bind=engine)
     session = Session()
-    results = session.query(State).all()
-    flag = True
-    for res in results:
-        if flag:
-            print("{}: {}".format(res.id, res.name))
-        flag = False
+    results = session.query(State).first()
+    if results:
+        print("{}: {}".format(results.id, results.name))
+    else:
+        print("Nothing")
     session.close()
