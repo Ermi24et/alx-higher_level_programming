@@ -15,6 +15,6 @@ class State(Base):
     a class that inherits from Base(declarative base class)
     """
     __tablename__ = 'states'
-    id = Column(Integer, nullable=False, primary_key=True)
+    id = Column(Integer, nullable=False, primary_key=True, autoincrement=True)
     name = Column(String(128), nullable=False)
-    cities = relationship("City", backref='state', cascade="delete")
+    cities = relationship("City", cascade="all, delete", overlaps="state")
