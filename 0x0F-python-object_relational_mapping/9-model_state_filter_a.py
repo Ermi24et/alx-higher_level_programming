@@ -4,10 +4,8 @@ a script that lists all State objects that contain the letter a from
 the database
 """
 if __name__ == "__main__":
-    from sqlalchemy import text
     import sys
     from model_state import Base, State
-    from model_state import Column, Integer, String
     from sqlalchemy import create_engine
     from sqlalchemy.orm import sessionmaker
 
