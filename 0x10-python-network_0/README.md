@@ -25,3 +25,4 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 - What an HTTP Cookie is
 - How to make a request with cURL
 - What happens when you type google.com in your browser (Application level)
+network python
