@@ -5,7 +5,7 @@ a script that sends a POST request to the passed URL with the email
 
 import urllib.request
 import sys
-import urllib.parse
+
 
 if __name__ == "__main__":
     url = sys.argv[1]
