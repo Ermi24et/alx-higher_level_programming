@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-# a script that sends a request to the URL and displays the body of the respon
+"""
+a script that sends a request to the URL and displays the body of the response
+"""
 
 import urllib.request
 import sys
