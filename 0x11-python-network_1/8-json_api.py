@@ -8,8 +8,8 @@ import requests
 
 if __name__ == "__main__":
     letter = "" if len(sys.argv) == 1 else sys.argv[1]
-    l = {"q": letter}
-    res = requests.post("http://0.0.0.0:5000/search_user", data=l)
+    dict_let = {"q": letter}
+    res = requests.post("http://0.0.0.0:5000/search_user", data=dict_let)
     try:
         j_res = res.json()
         if j_res == {}:
