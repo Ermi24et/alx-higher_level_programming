@@ -11,12 +11,12 @@ if __name__ == "__main__":
                                                               sys.argv[2])
 
     req = requests.get(url)
-    req_json = req.json()
+    commits = req.json()
 
     try:
         for i in range(10):
             print("{}: {}".format(
-                req_json[i].get("sha"),
-                req_json[i].get("commit").get("author").get("name")))
+                commits[i].get("sha"),
+                commits[i].get("commit").get("author").get("name")))
     except IndexError:
         pass
